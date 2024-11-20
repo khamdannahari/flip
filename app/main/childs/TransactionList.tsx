@@ -18,6 +18,7 @@ const TransactionList: React.FC<TransactionListProps> = ({
   return (
     <FlatList
       data={transactions}
+      windowSize={10}
       keyExtractor={(item) => item.id}
       renderItem={renderItem}
       contentContainerStyle={styles.listContainer}
