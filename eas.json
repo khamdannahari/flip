@@ -1,0 +1,28 @@
+{
+  "cli": {
+    "version": ">= 12.6.2",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "ANDROID_HOME": "/Users/khamdannahari/Library/Android/sdk",
+        "ANDROID_NDK_HOME": "/Users/khamdannahari/Library/Android/sdk/ndk/25.1.8937393"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "autoIncrement": true
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
